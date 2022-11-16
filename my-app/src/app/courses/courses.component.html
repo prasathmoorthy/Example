@@ -1,0 +1,15 @@
+
+<h2>{{course.name | uppercase}}  18EUCS{{course.id }}</h2>
+<button (click)="toggle()" class="btn1" >click</button>
+<div *ngIf="show" style="text-align:center" class="mid"><label>Name:
+    <input [(ngModel)] ="course.name" placeholder="Name" class="nameid" />
+</label><br>
+<label>RollNo:
+    <input [(ngModel)] ="course.id" placeholder="RollNo" class="rollid"/>
+</label><br>
+
+<button (click)="welcome()" class="btn">login</button>
+<div *ngIf="showme">
+    <h1 style="font-family: 'Times New Roman', Times, serif;">Login Succesfully {{course.name | uppercase}}</h1>
+</div>
+</div>
